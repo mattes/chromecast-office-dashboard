@@ -1,0 +1,39 @@
+html, body {
+  background-color: #1ABC9C;
+  height:100%; 
+}
+
+body {
+  display:flex;
+  align-items:center;
+}
+
+.header {
+  color: #ECF0F1;
+}
+
+.header .television {
+  width: 150px;
+  height: 150px;
+}
+
+.form {
+  background-color: #edeff1;
+  padding: 40px 30px;
+  border-radius: 6px;
+}
+
+.enterprise  {
+  margin: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: #16A085;
+}
+
+.footer {
+  color: #16A085;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  font-size: 10px;
+}

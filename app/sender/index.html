@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chromecast Office Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="vendor/flat-ui/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/flat-ui/css/flat-ui.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <script src="vendor/flat-ui/js/vendor/jquery.min.js"></script>
+    <script src="vendor/flat-ui/js/flat-ui.min.js"></script>
+    <script src="app.js"></script>
+
+    <script src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1"></script>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="header"> 
+            <img src="vendor/flat-ui/img/icons/svg/compas.svg" class="television">
+            <h1>Chromecast Office Dashboard</h1>
+            <p>Use Google Chromecast to display dashboards or any other URL on your TV.</p>
+          </div>
+
+          <div class="form">
+            <div class="form-group">
+              <input type="text" value="" placeholder="URL" class="form-control" id="url">
+            </div>
+
+            <a class="btn btn-primary btn-lg btn-block" id="open"><span class="fui-upload"></span> Open with Chromecast</a>
+
+          </div>
+          <!-- <button is="google&#45;cast&#45;button"></button> -->
+
+          <div class="enterprise">
+            <a href="https://44e3f2.typeform.com/to/v1sEWp" class="btn btn-xs btn-inverse">URL is behind VPN or password protected?</a>
+          </div>
+
+          <div class="footer">
+            Made with <span class="fui-heart"></span> in San Francisco.
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

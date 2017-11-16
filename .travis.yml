@@ -1,0 +1,21 @@
+addons:
+  apt:
+    packages:
+    - tree
+
+script: true
+
+before_deploy:
+  - mkdir build
+  - cp -R app/sender/* build/ 
+  - cp -R app/receiver build/
+  - tree build  
+
+deploy:
+  provider: firebase
+  project: chromecast-office-dashboard
+  token:
+    secure: "tQRPEnxAPjY/pPsNQIZ/B76dc7OzdnTTnblxaV2L2RSQuCTlD3/jpK7zVmOPZt/7T3CpiPuXhxXOrsKIO0ERcnM3uVeoVU7i3rhJyE4WeppBZMTl+GYx3/6o9HkL59rmiFuZI7o21Tc2Z/7gaADJJPSk6QJmlgrLFahLog4pXBypCRHSVQU+NqVEAfWsyw0OynVSiJhkqsZea9agSjHSbW7k6w66U2e0PbStF/RbK3KM4FdMRowbPjiUZ+086s9jBGMKhaWr05j0qc/VxKBqWlEu/PfBTnwQl1WSlzj1GmlY0YOwT9/SnIYyi+YVMvv5S2tvjOAKxJx91wS9Q5fobUn1nm2EIEsHabI7XlL8KvyeD1esDEZCwnfUKYr6/etapGYd4lMeISmd4BkaXjc1D3m7cYnAu0pFezsVe46MwNVsZFNozUU9hftIVwzxUMgafmCpTO4WDD62eDamosASkcM3gHVDH0qQK9kwgW285GEFl6bQhmFsnVpqWwdHIRykj7uFxovw3CGCzDmT8i8lQE3xu1ntLyH71QY15sAlavOb+Ylhh4tHbNVYc/HpeBq65EaQ9miAKGqd3XfSkcu6Fsz7NKt5eei/y4yz4s4SitTmyfT9WOl8On7EevqG3Lly9yVeu7N9QzuJ9qMcMCGUC4yj61md9+xuYgTpMtU/E90="
+  on:
+    branch: master
+  skip_cleanup: true
